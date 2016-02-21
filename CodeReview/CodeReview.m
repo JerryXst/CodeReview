@@ -7,11 +7,15 @@
 //
 
 #import "CodeReview.h"
+#import "SettingViewModel.h"
+#import "SettingWindowController.h"
 
 @interface CodeReview()
 
 @property (nonatomic, strong, readwrite) NSBundle *bundle;
+@property (nonatomic, strong) SettingViewModel *viewModel;
 @end
+
 
 @implementation CodeReview
 
@@ -31,6 +35,16 @@
                                                    object:nil];
     }
     return self;
+}
+
+- (SettingViewModel *)viewModel
+{
+    if (nil == _viewModel) {
+        NSString *strNib = [self.bundle.resourcePath stringByAppendingPathComponent:@"SettingWindowController.nib"];
+        SettingWindowController *winCtrl = [[SettingWindowController alloc] initWithWindowNibPath:strNib owner:self];
+        _viewModel = [[SettingViewModel alloc] initWithView:winCtrl];
+    }
+    return _viewModel;
 }
 
 - (void)didApplicationFinishLaunchingNotification:(NSNotification*)noti
@@ -53,9 +67,7 @@
 // Sample Action, for menu item:
 - (void)doMenuAction
 {
-    NSAlert *alert = [[NSAlert alloc] init];
-    [alert setMessageText:@"Hello, World"];
-    [alert runModal];
+    [self.viewModel showWindow];
 }
 
 - (void)dealloc

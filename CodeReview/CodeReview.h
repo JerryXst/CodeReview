@@ -13,9 +13,9 @@
 static CodeReview *sharedPlugin;
 
 @interface CodeReview : NSObject
+@property (nonatomic, strong, readonly) NSBundle* bundle;
 
 + (instancetype)sharedPlugin;
 - (id)initWithBundle:(NSBundle *)plugin;
 
-@property (nonatomic, strong, readonly) NSBundle* bundle;
 @end

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15E39d" minimumToolsVersion="Xcode 7.0">
+    <entity name="Employee" representedClassName="Employee" syncable="YES">
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stuffNO" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="comittedMessages" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="MesageEntity" inverseName="comittor" inverseEntity="MesageEntity" syncable="YES"/>
+        <relationship name="recievedMessages" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="MesageEntity" inverseName="reciever" inverseEntity="MesageEntity" syncable="YES"/>
+    </entity>
+    <entity name="MesageEntity" representedClassName="MesageEntity" syncable="YES">
+        <attribute name="content" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="comittor" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Employee" inverseName="comittedMessages" inverseEntity="Employee" syncable="YES"/>
+        <relationship name="reciever" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Employee" inverseName="recievedMessages" inverseEntity="Employee" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Employee" positionX="-3683" positionY="-2842" width="128" height="133"/>
+        <element name="MesageEntity" positionX="-4106" positionY="-2817" width="128" height="118"/>
+    </elements>
+</model>

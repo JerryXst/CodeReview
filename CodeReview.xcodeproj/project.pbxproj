@@ -7,14 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F610571B1C79FB18004DBD2E /* MesageEntity+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F61057141C79FB18004DBD2E /* MesageEntity+CoreDataProperties.m */; };
+		F610571C1C79FB18004DBD2E /* MesageEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = F61057161C79FB18004DBD2E /* MesageEntity.m */; };
+		F610571D1C79FB18004DBD2E /* Employee+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F61057181C79FB18004DBD2E /* Employee+CoreDataProperties.m */; };
+		F610571E1C79FB18004DBD2E /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = F610571A1C79FB18004DBD2E /* Employee.m */; };
 		F66B4FB41C79EEF900FB723D /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F66B4FB31C79EEF900FB723D /* AppKit.framework */; };
 		F66B4FB61C79EEF900FB723D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F66B4FB51C79EEF900FB723D /* Foundation.framework */; };
 		F66B4FBA1C79EEF900FB723D /* CodeReview.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = F66B4FB91C79EEF900FB723D /* CodeReview.xcscheme */; };
 		F66B4FBD1C79EEF900FB723D /* CodeReview.m in Sources */ = {isa = PBXBuildFile; fileRef = F66B4FBC1C79EEF900FB723D /* CodeReview.m */; };
 		F66B4FC01C79EEF900FB723D /* NSObject_Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = F66B4FBF1C79EEF900FB723D /* NSObject_Extension.m */; };
+		F66B4FC81C79F4B900FB723D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F66B4FC71C79F4B900FB723D /* CoreData.framework */; };
+		F6BA96891C79EFC9009B3FBA /* SettingWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6BA96871C79EFC9009B3FBA /* SettingWindowController.m */; };
+		F6BA968A1C79EFC9009B3FBA /* SettingWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6BA96881C79EFC9009B3FBA /* SettingWindowController.xib */; };
+		F6BA968D1C79F00C009B3FBA /* SettingViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F6BA968C1C79F00C009B3FBA /* SettingViewModel.m */; };
+		F6BA96901C79F0BF009B3FBA /* CodeReviewDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F6BA968F1C79F0BF009B3FBA /* CodeReviewDataModel.m */; };
+		F6BA96941C79F166009B3FBA /* CodeReviewCoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F6BA96921C79F166009B3FBA /* CodeReviewCoreDataModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F61057131C79FB18004DBD2E /* MesageEntity+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MesageEntity+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F61057141C79FB18004DBD2E /* MesageEntity+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MesageEntity+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F61057151C79FB18004DBD2E /* MesageEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MesageEntity.h; sourceTree = "<group>"; };
+		F61057161C79FB18004DBD2E /* MesageEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MesageEntity.m; sourceTree = "<group>"; };
+		F61057171C79FB18004DBD2E /* Employee+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Employee+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F61057181C79FB18004DBD2E /* Employee+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Employee+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F61057191C79FB18004DBD2E /* Employee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Employee.h; sourceTree = "<group>"; };
+		F610571A1C79FB18004DBD2E /* Employee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Employee.m; sourceTree = "<group>"; };
 		F66B4FB01C79EEF900FB723D /* CodeReview.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodeReview.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		F66B4FB31C79EEF900FB723D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		F66B4FB51C79EEF900FB723D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
@@ -24,6 +42,15 @@
 		F66B4FBE1C79EEF900FB723D /* NSObject_Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSObject_Extension.h; sourceTree = "<group>"; };
 		F66B4FBF1C79EEF900FB723D /* NSObject_Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSObject_Extension.m; sourceTree = "<group>"; };
 		F66B4FC11C79EEF900FB723D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F66B4FC71C79F4B900FB723D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F6BA96861C79EFC9009B3FBA /* SettingWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingWindowController.h; sourceTree = "<group>"; };
+		F6BA96871C79EFC9009B3FBA /* SettingWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingWindowController.m; sourceTree = "<group>"; };
+		F6BA96881C79EFC9009B3FBA /* SettingWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingWindowController.xib; sourceTree = "<group>"; };
+		F6BA968B1C79F00C009B3FBA /* SettingViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewModel.h; sourceTree = "<group>"; };
+		F6BA968C1C79F00C009B3FBA /* SettingViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewModel.m; sourceTree = "<group>"; };
+		F6BA968E1C79F0BF009B3FBA /* CodeReviewDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeReviewDataModel.h; sourceTree = "<group>"; };
+		F6BA968F1C79F0BF009B3FBA /* CodeReviewDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeReviewDataModel.m; sourceTree = "<group>"; };
+		F6BA96931C79F166009B3FBA /* CodeReviewCoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CodeReviewCoreDataModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F66B4FC81C79F4B900FB723D /* CoreData.framework in Frameworks */,
 				F66B4FB41C79EEF900FB723D /* AppKit.framework in Frameworks */,
 				F66B4FB61C79EEF900FB723D /* Foundation.framework in Frameworks */,
 			);
@@ -39,6 +67,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F610571F1C79FB22004DBD2E /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				F61057131C79FB18004DBD2E /* MesageEntity+CoreDataProperties.h */,
+				F61057141C79FB18004DBD2E /* MesageEntity+CoreDataProperties.m */,
+				F61057151C79FB18004DBD2E /* MesageEntity.h */,
+				F61057161C79FB18004DBD2E /* MesageEntity.m */,
+				F61057171C79FB18004DBD2E /* Employee+CoreDataProperties.h */,
+				F61057181C79FB18004DBD2E /* Employee+CoreDataProperties.m */,
+				F61057191C79FB18004DBD2E /* Employee.h */,
+				F610571A1C79FB18004DBD2E /* Employee.m */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		F61057211C79FBE6004DBD2E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F61057241C79FC9D004DBD2E /* Setting */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		F61057221C79FBEA004DBD2E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F6BA968B1C79F00C009B3FBA /* SettingViewModel.h */,
+				F6BA968C1C79F00C009B3FBA /* SettingViewModel.m */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		F61057231C79FBF3004DBD2E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F6BA968E1C79F0BF009B3FBA /* CodeReviewDataModel.h */,
+				F6BA968F1C79F0BF009B3FBA /* CodeReviewDataModel.m */,
+				F610571F1C79FB22004DBD2E /* CoreData */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F61057241C79FC9D004DBD2E /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				F6BA96861C79EFC9009B3FBA /* SettingWindowController.h */,
+				F6BA96871C79EFC9009B3FBA /* SettingWindowController.m */,
+				F6BA96881C79EFC9009B3FBA /* SettingWindowController.xib */,
+			);
+			name = Setting;
+			sourceTree = "<group>";
+		};
 		F66B4FA71C79EEF900FB723D = {
 			isa = PBXGroup;
 			children = (
@@ -59,6 +139,7 @@
 		F66B4FB21C79EEF900FB723D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F66B4FC71C79F4B900FB723D /* CoreData.framework */,
 				F66B4FB31C79EEF900FB723D /* AppKit.framework */,
 				F66B4FB51C79EEF900FB723D /* Foundation.framework */,
 			);
@@ -68,6 +149,9 @@
 		F66B4FB71C79EEF900FB723D /* CodeReview */ = {
 			isa = PBXGroup;
 			children = (
+				F61057231C79FBF3004DBD2E /* Model */,
+				F61057221C79FBEA004DBD2E /* ViewModel */,
+				F61057211C79FBE6004DBD2E /* View */,
 				F66B4FBB1C79EEF900FB723D /* CodeReview.h */,
 				F66B4FBC1C79EEF900FB723D /* CodeReview.m */,
 				F66B4FBE1C79EEF900FB723D /* NSObject_Extension.h */,
@@ -82,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				F66B4FB91C79EEF900FB723D /* CodeReview.xcscheme */,
+				F6BA96921C79F166009B3FBA /* CodeReviewCoreDataModel.xcdatamodeld */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -142,6 +227,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6BA968A1C79EFC9009B3FBA /* SettingWindowController.xib in Resources */,
 				F66B4FBA1C79EEF900FB723D /* CodeReview.xcscheme in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -153,8 +239,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F610571D1C79FB18004DBD2E /* Employee+CoreDataProperties.m in Sources */,
+				F610571C1C79FB18004DBD2E /* MesageEntity.m in Sources */,
 				F66B4FBD1C79EEF900FB723D /* CodeReview.m in Sources */,
+				F6BA96941C79F166009B3FBA /* CodeReviewCoreDataModel.xcdatamodeld in Sources */,
 				F66B4FC01C79EEF900FB723D /* NSObject_Extension.m in Sources */,
+				F610571E1C79FB18004DBD2E /* Employee.m in Sources */,
+				F610571B1C79FB18004DBD2E /* MesageEntity+CoreDataProperties.m in Sources */,
+				F6BA96901C79F0BF009B3FBA /* CodeReviewDataModel.m in Sources */,
+				F6BA96891C79EFC9009B3FBA /* SettingWindowController.m in Sources */,
+				F6BA968D1C79F00C009B3FBA /* SettingViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,8 +377,22 @@
 				F66B4FC61C79EEF900FB723D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F6BA96921C79F166009B3FBA /* CodeReviewCoreDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F6BA96931C79F166009B3FBA /* CodeReviewCoreDataModel.xcdatamodel */,
+			);
+			currentVersion = F6BA96931C79F166009B3FBA /* CodeReviewCoreDataModel.xcdatamodel */;
+			path = CodeReviewCoreDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F66B4FA81C79EEF900FB723D /* Project object */;
 }
