@@ -10,13 +10,16 @@
     </entity>
     <entity name="MesageEntity" representedClassName="MesageEntity" syncable="YES">
         <attribute name="content" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fileName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="filePath" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lineNumber" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="status" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <relationship name="comittor" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Employee" inverseName="comittedMessages" inverseEntity="Employee" syncable="YES"/>
         <relationship name="reciever" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Employee" inverseName="recievedMessages" inverseEntity="Employee" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Employee" positionX="-3683" positionY="-2842" width="128" height="133"/>
-        <element name="MesageEntity" positionX="-4106" positionY="-2817" width="128" height="118"/>
+        <element name="Employee" positionX="-3888" positionY="-2808" width="128" height="133"/>
+        <element name="MesageEntity" positionX="-4088" positionY="-2826" width="128" height="163"/>
     </elements>
 </model>
